@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+
+	<servlet>
+		<servlet-name>dispatcher</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>/WEB-INF/spring/dispatcher-servlet.xml</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+
+		<multipart-config>
+			<location>D:\</location>
+			<!-- <location>/tmp</location> -->
+		</multipart-config>
+
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>dispatcher</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>/WEB-INF/spring/root-context.xml</param-value>
+	</context-param>
+
+	<session-config>
+		<tracking-mode>COOKIE</tracking-mode>
+	</session-config>
+
+
+	<!-- Configuracion de la seguridad -->
+
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>URLs permitidas para ROL USUARIO</web-resource-name>
+			<!-- Define the context-relative URL(s) to be protected -->
+			<url-pattern>/admin/*</url-pattern>			
+			
+		</web-resource-collection>
+		<auth-constraint>
+			<!-- Anyone with this role may access this area -->
+			<role-name>usuario</role-name>
+		</auth-constraint>
+	</security-constraint>
+
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>URLs permitidas para ROL ADMINISTRADOR</web-resource-name>
+			<!-- Define the context-relative URL(s) to be protected -->
+			<url-pattern>/admin/*</url-pattern>
+			<url-pattern>/carrusel/*</url-pattern>
+			<url-pattern>/schedule/*</url-pattern>
+			<url-pattern>/news/*</url-pattern>			
+			<url-pattern>/films/*</url-pattern>	
+			<url-pattern>/rooms/*</url-pattern>			
+		</web-resource-collection>
+		<auth-constraint>
+			<!-- Anyone with this role may access this area -->
+			<role-name>Administrador</role-name>
+		</auth-constraint>
+	</security-constraint>
+
+	<login-config>
+		<auth-method>FORM</auth-method>
+		<form-login-config>
+			<form-login-page>/WEB-INF/views/formLogin.jsp</form-login-page>
+			<form-error-page>/WEB-INF/views/formError.jsp</form-error-page>
+		</form-login-config>
+	</login-config>
+
+
+
+</web-app>

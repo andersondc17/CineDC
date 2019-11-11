@@ -1,0 +1,385 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+p,a{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.fondov-claro{
+    width: 100%;
+    float: left;
+    height: 60vh;
+    position: absolute;
+    background: rgb(139,24,26);
+    background: linear-gradient(90deg, rgba(139,24,26,0.969625350140056) 0%, rgba(210,66,66,1) 0%, rgba(212,25,70,1) 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 78%, 0 100%);
+}
+
+
+.fondo-claro{
+    width: 100%;
+    float: left;
+    height: 100vh;
+    position: relative;
+}
+
+.fondo-oscuro{
+    width: 100%;
+    float: left;
+    height: 100vh;
+    position: absolute;
+    /*background: rgb(139,24,26);*/
+    /*background: linear-gradient(90deg, rgba(139,24,26,0.969625350140056) 0%, rgba(28,27,27,1) 0%, rgba(32,24,24,1) 100%);*/
+    z-index: -1;
+}
+
+.contenedor-form{
+    width: 100%;
+    height: 100%;
+    float: left;
+    background-color: #f7fafc;
+    border-radius: .375rem;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    box-shadow: rgba(0,0,0,.2) 0 3px 8px;
+    padding-bottom: 7%;
+}
+
+.general-form{
+    max-width: 445px;
+    width: 100%;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+    z-index: 5;
+}
+
+.texto-izq{
+    width: 50%;
+    color: #8898aa;
+    text-align: left;
+    float: left;
+    font-size: 14px;
+}
+
+.texto-der{
+    width: 50%;
+    color: #8898aa;
+    text-align: right;
+    float: left;
+    font-size: 14px;
+}
+
+.fondo-claro{
+    text-align: center;
+}
+
+
+.fondo-claro h3{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.625rem;
+    padding: 4%;
+    padding-top: 7%;
+    padding-bottom: 1%;
+}
+
+.fondo-claro p{
+    color: white;
+    opacity: .9;
+    font-size: 14px;
+}
+
+
+.contenedor-input {
+    width: 80%;
+    float: left;
+    background-color: white;
+    margin-right: 10%;
+    margin-left: 10%;
+    box-shadow: 0 1px 3px rgba(50,50,93,.15), 0 1px 0 rgba(0,0,0,.02);
+    border-radius: .375rem;
+    margin-bottom: 1.5rem;
+}
+
+.contenedor-input i {
+    width: 10%;
+    float: left;
+    line-height: 46px;
+    color: #adb5bd;
+    text-align: center;
+}
+
+.contenedor-input input {
+    width: 90%;
+    float: left;
+    height: 46px;
+    border: none;
+    background-color: unset;
+    outline: none;
+}
+
+input::placeholder{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.mensaje-cuenta p{
+    text-align: center;
+    font-size: 14px;
+    padding: 5%;
+    color: #8898aa!important;
+}
+
+
+.mensaje-btn {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.contenedor-input-m {
+    background-color: unset;
+    box-shadow: unset;
+  
+}
+
+.mensaje-password {
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #8898aa!important;
+}
+
+button{
+    background: rgb(139,24,26);
+    background: linear-gradient(90deg, rgba(139,24,26,0.969625350140056) 0%, rgba(210,66,66,1) 0%, rgba(212,25,70,1) 100%);
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+}
+
+hr{
+    opacity: .2;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+.conectar-red{
+    text-align: center;
+}
+
+.conectar-red a{
+    background-color: white;
+    padding: .625rem 1.25rem;
+    margin-right: .5rem;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    display: inline-block;
+    margin-bottom: 4%;
+    border-radius: 5px;
+    /*color: #5e72e4;*/
+    color: #4267b2;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: .025em;
+    font-size: .875rem;
+}
+
+.conectar-red a i{
+    color: black;
+    opacity: .9;
+    width: 20px;
+    font-size: 20px;
+    margin-right: .75em;
+    color: #4267b2;
+}
+
+.conectar-red a .facebook-i{
+  color: #4267b2;
+}
+
+.conectar-red img{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: .75em;
+}
+
+nav{
+    width: 100%;
+    height: 88px;
+    float: left;
+}
+
+li,::placeholder{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+
+
+
+.ancho-limite{
+    max-width: 1140px;
+    width: 90%;
+    position: relative;
+    margin: auto;
+}
+
+.contenedor-menu{
+    width: 100%;
+    float: left;
+    height: 100px;
+    background-color: unset;
+}
+
+.logo{
+    width: 26.3%;
+    height: 88px;
+    float: left;
+}
+
+.li-menu{
+    width: 73.6%;
+    float: left;
+    text-align: right;
+}
+
+.li-menu a{
+    width: 20%;
+    float: left;
+    height: 100px;
+    line-height: 100px;
+    color: white;
+    font-size: 1rem;
+}
+
+.li-menu li{
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: .025em;
+}
+
+
+.pedido{
+    width: 26.3%;
+    float: left;
+}
+
+.pedido i{
+    width: 50px;
+    height: 100px;
+    line-height: 100px;
+    float:right;
+    text-align: right;
+    color: white;
+}
+
+.logo img{
+    max-width: 250px;
+    width: 100%;
+    margin-top: 15px;
+    display: block;
+}
+
+
+
+.ocultar{
+	display: none;
+}
+
+
+
+
+.contenedor-modal{
+    width: 100%;
+    height: 100vh;
+    float: left;
+    background-color: rgba(0,0,0,.6);
+    position: absolute;
+    z-index: 5;
+    top: 0px;
+}
+
+
+.ventana-modal{
+    width: 30%;
+    height: auto;
+    background-color: rgba(210,66,66,1);
+    position: relative;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+    background-color: white;
+    top: 20%;
+    border-radius: .375rem;
+    text-align: center;
+    padding-bottom: 4%;
+}
+
+.ventana-modal i{
+    width: 100%;
+    text-align: center;
+    font-size: 100px;
+    margin-top: 10%;
+    color: yellowgreen;
+}
+
+.ventana-modal a{
+    background: linear-gradient(90deg, rgba(139,24,26,0.969625350140056) 0%, rgba(210,66,66,1) 0%, rgba(212,25,70,1) 100%);
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    display: inline-block;
+}
+
+.ventana-modal h1{
+    font-family: 'Raleway', sans-serif;
+    padding: 4%;
+    font-size: 3vh;
+    color: #16181b;
+}
+
+
+.msj-error{
+	  font-family: 'Raleway', sans-serif;
+	  font-size: 14px;
+}
