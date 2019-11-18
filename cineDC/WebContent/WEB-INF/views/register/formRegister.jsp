@@ -41,7 +41,7 @@
     <h3>Bienvenido!</h3>
     <p>Para mantenerse conectado con nosotros, inicie sesión  <br> con su información personal</p>
 
-
+<div class="contenedor-form-login">
 
     <div class="general-form">
 
@@ -147,7 +147,7 @@
         
             </div>
         
-
+ </div>
 
 </div>
 

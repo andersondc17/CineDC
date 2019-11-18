@@ -383,3 +383,10 @@ a:hover{
 	  font-family: 'Raleway', sans-serif;
 	  font-size: 14px;
 }
+
+
+.contenedor-form-login{
+	width: 100%;
+	float: left;
+	margin-bottom: 4%
+}

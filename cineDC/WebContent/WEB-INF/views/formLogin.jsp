@@ -57,7 +57,7 @@
     <p>Para mantenerse conectado con nosotros, inicie sesión  <br> con su información personal</p>
 
 
-
+  <div class="contenedor-form-login">
     <div class="general-form">
 
             <div class="contenedor-form">
@@ -107,12 +107,18 @@
         
             </div>
         
+        
+       
+        
+        
             <a href="" class="texto-izq">¿Se te olvidó tu contraseña?</a>
             <a href="${urlCreate}" title="Nuevo Usuario"  class="texto-der">Crear una nueva cuenta</a>
         
+      
+       
             </div>
-        
-
+         
+   </div>
 
 </div>
 

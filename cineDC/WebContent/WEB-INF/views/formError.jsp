@@ -57,7 +57,7 @@
     <p>Para mantenerse conectado con nosotros, inicie sesión  <br> con su información personal</p>
 
 
-
+<div class="contenedor-form-login">
     <div class="general-form">
 
             <div class="contenedor-form">
@@ -114,7 +114,7 @@
         
             </div>
         
-
+</div>
 
 </div>
 
